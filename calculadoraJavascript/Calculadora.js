@@ -2,8 +2,8 @@ let user = prompt("Ingrese tu nombre: ");
 
 console.log(`Bienvenido ${user} a la calculadora de operaciones básicas`);
 
-let num1 = parseFloat(prompt("Ingrese el primer número: "));
-let num2 = parseFloat(prompt("Ingrese el segundo número: "));
+let num1 = Number(prompt("Ingrese el primer número: "));
+let num2 = Number(prompt("Ingrese el segundo número: "));
 
 console.log(`Los números ingresados son: ${num1} y ${num2}`);
 
