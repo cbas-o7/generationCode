@@ -8,12 +8,16 @@ function FriendList() {
 }
 
 // Type your code above this line!
-let friendsToAdd = Number(prompt("Agrega el numero de amigos que quieres agregar: "))
+//Se agrega por linea de comandos el numero que se quieren agregar
+let friendsToAdd = process.argv[3] 
+let x =  4 //Pensado como el argumento que ira subiendo en el ciclo para process.argv[x]
+
 
 let friendList = new FriendList()
 for(let i = 0; i < friendsToAdd; i++) {
-    let friend = prompt(i + ".- Agrega a un nuevo amigo: ")
-    friendList.pushFriend(friend)
+    friendList.pushFriend(process.argv[x])
+    x++
+
 }
 
 console.log(friendList.friends)

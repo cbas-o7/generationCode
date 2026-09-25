@@ -7,6 +7,6 @@ function Journey (start, end) {
 
 // Type your code above this line!
 
-const travel = new Journey(process.argv[2], process.argv[3])
+const travel = new Journey(process.argv[3], process.argv[4])
 
 console.log("Booking a taxi from " + travel.start + " to " + travel.end + ".")
