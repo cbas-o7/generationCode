@@ -1,0 +1,3 @@
+clickMe = () => {
+    alert("Hola")
+}
